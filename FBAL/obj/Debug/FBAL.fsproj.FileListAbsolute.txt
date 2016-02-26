@@ -1,0 +1,7 @@
+D:\My files\C#\Repos\WebNGram\FBAL\bin\Debug\FBAL.XML
+D:\My files\C#\Repos\WebNGram\FBAL\bin\Debug\FBAL.dll
+D:\My files\C#\Repos\WebNGram\FBAL\bin\Debug\FBAL.pdb
+D:\My files\C#\Repos\WebNGram\FBAL\bin\Debug\FSharp.Core.dll
+D:\My files\C#\Repos\WebNGram\FBAL\bin\Debug\FSharp.Core.xml
+D:\My files\C#\Repos\WebNGram\FBAL\obj\Debug\FBAL.dll
+D:\My files\C#\Repos\WebNGram\FBAL\obj\Debug\FBAL.pdb

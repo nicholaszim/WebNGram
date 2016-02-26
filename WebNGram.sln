@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebNGram", "WebNGram\WebNGram.csproj", "{21FE771B-7CC0-4C17-9077-6314D55EFF1B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2F2D3C46-2991-4433-A98D-9F653707476E} = {2F2D3C46-2991-4433-A98D-9F653707476E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebNGram.Tests", "WebNGram.Tests\WebNGram.Tests.csproj", "{D7FD6826-51F9-424B-8566-B8CF055A5426}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{5021D667-D175-41DB-9A62-2227D4DA961A}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FBAL", "FBAL\FBAL.fsproj", "{2F2D3C46-2991-4433-A98D-9F653707476E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5021D667-D175-41DB-9A62-2227D4DA961A} = {5021D667-D175-41DB-9A62-2227D4DA961A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21FE771B-7CC0-4C17-9077-6314D55EFF1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21FE771B-7CC0-4C17-9077-6314D55EFF1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21FE771B-7CC0-4C17-9077-6314D55EFF1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21FE771B-7CC0-4C17-9077-6314D55EFF1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7FD6826-51F9-424B-8566-B8CF055A5426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7FD6826-51F9-424B-8566-B8CF055A5426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7FD6826-51F9-424B-8566-B8CF055A5426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7FD6826-51F9-424B-8566-B8CF055A5426}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5021D667-D175-41DB-9A62-2227D4DA961A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5021D667-D175-41DB-9A62-2227D4DA961A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5021D667-D175-41DB-9A62-2227D4DA961A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5021D667-D175-41DB-9A62-2227D4DA961A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F2D3C46-2991-4433-A98D-9F653707476E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F2D3C46-2991-4433-A98D-9F653707476E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F2D3C46-2991-4433-A98D-9F653707476E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F2D3C46-2991-4433-A98D-9F653707476E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
