@@ -1,0 +1,12 @@
+D:\My files\C#\Repos\WebNGram\FTester\bin\Debug\FTester.exe.config
+D:\My files\C#\Repos\WebNGram\FTester\bin\Debug\FTester.XML
+D:\My files\C#\Repos\WebNGram\FTester\bin\Debug\FTester.exe
+D:\My files\C#\Repos\WebNGram\FTester\bin\Debug\FTester.pdb
+D:\My files\C#\Repos\WebNGram\FTester\bin\Debug\FBAL.dll
+D:\My files\C#\Repos\WebNGram\FTester\bin\Debug\FSharp.Core.dll
+D:\My files\C#\Repos\WebNGram\FTester\bin\Debug\FBAL.pdb
+D:\My files\C#\Repos\WebNGram\FTester\bin\Debug\FBAL.xml
+D:\My files\C#\Repos\WebNGram\FTester\bin\Debug\FSharp.Core.xml
+D:\My files\C#\Repos\WebNGram\FTester\obj\Debug\FTester.fsprojResolveAssemblyReference.cache
+D:\My files\C#\Repos\WebNGram\FTester\obj\Debug\FTester.exe
+D:\My files\C#\Repos\WebNGram\FTester\obj\Debug\FTester.pdb
