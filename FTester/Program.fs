@@ -6,6 +6,7 @@ module Program
 
 open System
 open FBAL.NgramManager
+open FBAL.NgramManager.Dublicates
 
 [<EntryPoint>]
 let main argv = 
@@ -27,19 +28,24 @@ let main argv =
     //printfn "%A" b
     let text1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     let text2 = "Lorem2 ip3sum dolor sit am5et, consectetur adipiscing elit, sed do ei0usmod tempor inci4didunt ut labore et dolore magna aliqua."
-    let a = NgramProfileGenerator 5 text1
-    let b = NgramProfileGenerator3 5 text1
-    let compareSeqs = Seq.compareWith Operators.compare
-    let theSame = (compareSeqs a b = 0)
+//    let a = NgramProfileGenerator 5 text1
+//    let b = NgramProfileGenerator3 5 text1
+//    let compareSeqs = Seq.compareWith Operators.compare
+//    let theSame = (compareSeqs a b = 0)
+//
+//    let test a b = Seq.fold (&&) true (Seq.zip a b |> Seq.map (fun (aa,bb) -> aa=bb))
+//
+//    let isSame = test a b
 
-    let test a b = Seq.fold (&&) true (Seq.zip a b |> Seq.map (fun (aa,bb) -> aa=bb))
+    let result = NgramProfileGenerator4 5 text2
+    let result2 = NgramProfileGenerator 5 text1
+    let dictionary = result2 |> toIDict
 
-    let isSame = test a b
-
-    printfn "TheSame : %A" theSame
-    printfn "isSame : %A" isSame
+//    printfn "TheSame : %A" theSame
+//    printfn "isSame : %A" isSame
     //printf "%A " a
     //printf "%A " b
+    printfn "%A" dictionary
     
     printfn "%A" argv
     0

@@ -2,14 +2,33 @@
 <doc>
 <assembly><name>FBAL</name></assembly>
 <members>
-<member name="M:FBAL.NgramManager.NgramProfileGenerator(System.Int32,System.String)">
+<member name="M:FBAL.NgramManager.TextProcessor(System.String)">
+ <summary>
+ Wrapper for text processing and n-gram creation functions
+ </summary>
+ <param name="url"></param>
+</member>
+<member name="M:FBAL.NgramManager.toIDict``2(System.Collections.Generic.IEnumerable{System.Tuple{``0,``1}})">
+ <summary>
+ Function that takes sequence<'T, 'U> as input and converts it into idictionary obejct.
+ </summary>
+ <param name="seq">sequence<'T, 'U></param>
+</member>
+<member name="M:FBAL.NgramManager.NgramProfileGenerator4(System.Int32,System.String)">
+ <summary>
+ Current working n-gram construction algorithm. Takes text as source and an integer of n-gram size
+ </summary>
+ <param name="n"></param>
+ <param name="text"></param>
+</member>
+<member name="M:FBAL.NgramManager.Dublicates.NgramProfileGenerator(System.Int32,System.String)">
  <summary>
  Function for generation n-grams using specified text resource.
  </summary>
  <param name="n"></param>
  <param name="text"></param>
 </member>
-<member name="M:FBAL.NgramManager.fetchUrl``1(Microsoft.FSharp.Core.FSharpFunc{System.IO.StreamReader,Microsoft.FSharp.Core.FSharpFunc{System.String,``0}},System.String)">
+<member name="M:FBAL.NgramManager.Utilities.fetchUrl``1(Microsoft.FSharp.Core.FSharpFunc{System.IO.StreamReader,Microsoft.FSharp.Core.FSharpFunc{System.String,``0}},System.String)">
  <summary>
  FUnction for fetching data from internet resourse using urls
  </summary>

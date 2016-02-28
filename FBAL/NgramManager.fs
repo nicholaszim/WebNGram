@@ -42,6 +42,9 @@ module NgramManager =
             |> Seq.where (fun c -> not (Char.IsNumber(c))) 
             |> Seq.where (fun c -> not (Char.IsPunctuation(c)))
             |> Seq.map (fun c -> replaceBlanks c)
+
+        let convertSeq ((a : char[]), b) =
+            (String(a), Seq.length b)
         
         let striptoSeq (stripChars : string) (text : string) = 
             text |> Seq.where (fun c -> not (stripChars.Contains(c.ToString())))
@@ -87,29 +90,36 @@ module NgramManager =
             |> Seq.map 
                    (fun (ngram, occurrences) -> 
                    (String(ngram).Replace(" ", "_") |> strip2 "1234567890", Seq.length occurrences)) //custom extention
+
+        let NgramProfileGenerator3 n (text : string) = 
+            text
+            |> striptoSeq "1234567890.,"
+            |> Seq.map (fun item -> if Char.IsWhiteSpace(item) then '_' else item)
+            |> Seq.windowed n
+            |> Seq.groupBy id
+            |> Seq.map (fun (ngram, occurrences) -> (String(ngram).Replace(" ", "_"), Seq.length occurrences))
     
     open Utilities
     open Dublicates
-    
-    /// <summary>
-    /// Current working n-gram construction algorithm. Takes text as source and an integer of n-gram size
-    /// </summary>
-    /// <param name="n"></param>
-    /// <param name="text"></param>
-    let NgramProfileGenerator3 n (text : string) = 
-        text
-        |> striptoSeq "1234567890.,"
-        |> Seq.map (fun item -> if Char.IsWhiteSpace(item) then '_' else item)
-        |> Seq.windowed n
-        |> Seq.groupBy id
-        |> Seq.map (fun (ngram, occurrences) -> (String(ngram).Replace(" ", "_"), Seq.length occurrences))
-
+        /// <summary>
+        /// Current working n-gram construction algorithm. Takes text as source and an integer of n-gram size
+        /// </summary>
+        /// <param name="n"></param>
+        /// <param name="text"></param>
     let NgramProfileGenerator4 n (text : string) =
         text
         |> stripString
         |> Seq.windowed n
         |> Seq.groupBy id
-        |> Seq.map (fun (ngram, occurrences) -> String(ngram), Seq.length occurrences)
+        |> Seq.map convertSeq //(fun (ngram, occurrences) -> String(ngram), Seq.length occurrences)
+
+    /// <summary>
+    /// Function that takes sequence<'T, 'U> as input and converts it into idictionary obejct.
+    /// </summary>
+    /// <param name="seq">sequence<'T, 'U></param>
+    let toIDict seq =
+        seq |> dict
+
     
     /// <summary>
     /// Wrapper for text processing and n-gram creation functions
