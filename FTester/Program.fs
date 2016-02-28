@@ -10,7 +10,7 @@ open FBAL.NgramManager
 [<EntryPoint>]
 let main argv = 
     let text = 
-        "As part of excersise to better understand F# which I am currently learning , I wrote function to split given string into n-grams. 
+        "1As part of exc2ersise to better understand F# which I am currently learning , I wrote function to split given string into n-grams. 
 1) I would like to receive feedback about my function : can this be written simpler or in more efficient way?
 
 2) My overall goal is to write function that returns string similarity (on 0.0 .. 1.0 scale) based on n-gram similarity; Does this approach works well for short strings comparisons , or can this method reliably be used to compare large strings (like articles for example). 
@@ -19,14 +19,27 @@ let main argv =
     //let text2 = "Lorem Lorem Lorem"
     //let a = NgramProfileGenerator 5 text2
     //let b = Seq.item 0 a
-    //printfn "%A" a
+    //let a = WindowText 5 text
 
-    let myCallback (reader:IO.StreamReader) url = 
-        let html = reader.ReadToEnd()
-        let html1000 = html.Substring(0,1000)
-        printfn "Downloaded %s. First 1000 is %s" url html1000
-        html
-    let google = fetchUrl myCallback "https://msdn.microsoft.com/ru-ru/library/system.io.stringreader(v=vs.110).aspx"
-    printfn "%A" google
+    //let a = strip2 "oat" "glerk"
+    //let b = NgramProfileGenerator2 5 text
+    //let b = "glerk".StripChars("g")
+    //printfn "%A" b
+    let text1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    let text2 = "Lorem2 ip3sum dolor sit am5et, consectetur adipiscing elit, sed do ei0usmod tempor inci4didunt ut labore et dolore magna aliqua."
+    let a = NgramProfileGenerator 5 text1
+    let b = NgramProfileGenerator3 5 text1
+    let compareSeqs = Seq.compareWith Operators.compare
+    let theSame = (compareSeqs a b = 0)
+
+    let test a b = Seq.fold (&&) true (Seq.zip a b |> Seq.map (fun (aa,bb) -> aa=bb))
+
+    let isSame = test a b
+
+    printfn "TheSame : %A" theSame
+    printfn "isSame : %A" isSame
+    //printf "%A " a
+    //printf "%A " b
+    
     printfn "%A" argv
     0
