@@ -90,6 +90,19 @@ module Generics =
         |> Seq.map (fun c -> replaceBlanks c)
     
     let toIDict seq = seq |> dict
+    let toArray seq = 
+        seq
+        |> Seq.toArray
+        |> Array.map (fun (a, b) -> a, b)
+    let toMySeq array =
+        array
+        |> Array.toSeq
+        |> Seq.map (fun (a, b) -> a, b)
+
+    let ofArray (arr: 'T array) = new System.Collections.Generic.List<'T>(arr)
+    let ofSeq (arr: 'T seq) = new System.Collections.Generic.List<'T>(arr)
+
+    //let toGenList (seq : seq<'a*'b>) = new System.Collections.Generic.List<System.Tuple<'a, 'b>>(seq)
     
     let generateNGram n resource = 
         resource

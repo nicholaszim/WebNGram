@@ -10,6 +10,6 @@ namespace Models
 	{
 		public int Id { get; set; }
 		public CategoryEnum Category { get; set; }
-		public IDictionary<string, int> NGrams { get; set; }
+		public List<Tuple<string, int>> NGrams { get; set; }
 	}
 }

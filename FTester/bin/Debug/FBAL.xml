@@ -8,7 +8,7 @@
  </summary>
  <param name="url"></param>
 </member>
-<member name="M:FBAL.NgramManager.CreateModel(Models.CategoryEnum,System.Collections.Generic.IDictionary{System.String,System.Int32})">
+<member name="M:FBAL.NgramManager.CreateModel(Models.CategoryEnum,System.Collections.Generic.List{System.Tuple{System.String,System.Int32}})">
  <summary>
  Function that creates Example model by using specified parameters as input
  </summary>
