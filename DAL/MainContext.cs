@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Models;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace DAL
 {
 	public class MainContext : DbContext
 	{
-		public MainContext() : base("dbName here")
+		public MainContext() : base("Ngram")
 		{
 			this.Configuration.LazyLoadingEnabled = true;
 		}
@@ -19,6 +20,6 @@ namespace DAL
 			this.Configuration.LazyLoadingEnabled = true;
 		}
 
-		//public DbSet<User> Users { get; set; }
+		public DbSet<Example> Examples { get; set; }
 	}
 }

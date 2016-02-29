@@ -42,5 +42,10 @@
  <param name="callback"></param>
  <param name="url"></param>
 </member>
+<member name="P:FBAL.Working.CreateCategory">
+ <summary>
+ Function for category creation. Needs url as string for processing
+ </summary>
+</member>
 </members>
 </doc>
