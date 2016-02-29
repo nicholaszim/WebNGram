@@ -47,12 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="TestNGram.fs" />
-    <Compile Include="Library1.fs" />
     <None Include="Script.fsx" />
     <Compile Include="NgramManager.fs" />
-    <Compile Include="MainManager.fs" />
     <Compile Include="MainProvider.fs" />
+    <Compile Include="Functions\Utilities.fs" />
+    <Compile Include="Functions\Generics.fs" />
+    <Compile Include="Functions\Manager.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Models\Models.csproj">
