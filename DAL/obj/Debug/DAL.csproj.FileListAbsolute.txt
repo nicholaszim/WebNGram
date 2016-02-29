@@ -10,3 +10,5 @@ D:\My files\C#\Repos\WebNGram\DAL\bin\Debug\EntityFramework.SqlServer.xml
 D:\My files\C#\Repos\WebNGram\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\My files\C#\Repos\WebNGram\DAL\obj\Debug\DAL.dll
 D:\My files\C#\Repos\WebNGram\DAL\obj\Debug\DAL.pdb
+D:\My files\C#\Repos\WebNGram\DAL\obj\Debug\DAL.Migrations.First.resources
+D:\My files\C#\Repos\WebNGram\DAL\obj\Debug\DAL.csproj.GenerateResource.Cache

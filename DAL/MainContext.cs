@@ -20,6 +20,7 @@ namespace DAL
 			this.Configuration.LazyLoadingEnabled = true;
 		}
 
+		public DbSet<Ngram> Ngrams { get; set;}
 		public DbSet<Example> Examples { get; set; }
 	}
 }

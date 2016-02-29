@@ -6,10 +6,19 @@ using System.Threading.Tasks;
 
 namespace Models
 {
+	public class Ngram
+	{
+		public int Id { get; set; }
+		public string Key { get; set; }
+		public int Value { get; set; }
+
+		public virtual Example Example { get; set; }
+	}
+
 	public class Example
 	{
 		public int Id { get; set; }
 		public CategoryEnum Category { get; set; }
-		public List<Tuple<string, int>> NGrams { get; set; }
+		public virtual List<Ngram> NGrams { get; set; }
 	}
 }

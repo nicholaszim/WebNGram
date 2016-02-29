@@ -8,6 +8,7 @@ open System
 open FBAL.NgramManager
 open FBAL.NgramManager.Dublicates
 open Models
+open FBAL.Generics
 
 [<EntryPoint>]
 let main argv = 
@@ -42,6 +43,11 @@ let main argv =
 //    let dictionary = toIDict result
 //    let model = CreateModel(CategoryEnum.IT, dictionary)
 //    printfn "%A" model
-    
+
+    let sequence = generateNGram 5 text2
+    let alist = ofSeq
+//    let toNgram = toExample sequence
+//    let cmon = ofSeq toNgram
+//    printfn "%A" cmon
     printfn "%A" argv
     0
