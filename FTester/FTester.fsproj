@@ -57,6 +57,11 @@
       <Project>{2f2d3c46-2991-4433-a98d-9f653707476e}</Project>
       <Private>True</Private>
     </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Name>Models</Name>
+      <Project>{26f6827b-d900-459b-8c9d-ce4d8cc23a52}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>

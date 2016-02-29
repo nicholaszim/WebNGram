@@ -7,6 +7,7 @@ module Program
 open System
 open FBAL.NgramManager
 open FBAL.NgramManager.Dublicates
+open Models
 
 [<EntryPoint>]
 let main argv = 
@@ -37,15 +38,10 @@ let main argv =
 //
 //    let isSame = test a b
 
-    let result = NgramProfileGenerator4 5 text2
-    let result2 = NgramProfileGenerator 5 text1
-    let dictionary = result2 |> toIDict
-
-//    printfn "TheSame : %A" theSame
-//    printfn "isSame : %A" isSame
-    //printf "%A " a
-    //printf "%A " b
-    printfn "%A" dictionary
+//    let result = NgramProfileGenerator4 5 text2
+//    let dictionary = toIDict result
+//    let model = CreateModel(CategoryEnum.IT, dictionary)
+//    printfn "%A" model
     
     printfn "%A" argv
     0

@@ -10,3 +10,5 @@ D:\My files\C#\Repos\WebNGram\FTester\bin\Debug\FSharp.Core.xml
 D:\My files\C#\Repos\WebNGram\FTester\obj\Debug\FTester.fsprojResolveAssemblyReference.cache
 D:\My files\C#\Repos\WebNGram\FTester\obj\Debug\FTester.exe
 D:\My files\C#\Repos\WebNGram\FTester\obj\Debug\FTester.pdb
+D:\My files\C#\Repos\WebNGram\FTester\bin\Debug\Models.dll
+D:\My files\C#\Repos\WebNGram\FTester\bin\Debug\Models.pdb

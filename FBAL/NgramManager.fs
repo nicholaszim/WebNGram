@@ -1,4 +1,5 @@
 ﻿namespace FBAL
+open Models
 
 open System
 open System.Net
@@ -39,6 +40,12 @@ module NgramManager =
 
         let stripString (text : string) =
             text
+            |> Seq.where (fun c -> not (Char.IsNumber(c))) 
+            |> Seq.where (fun c -> not (Char.IsPunctuation(c)))
+            |> Seq.map (fun c -> replaceBlanks c)
+
+        let stripResource resource =
+            resource
             |> Seq.where (fun c -> not (Char.IsNumber(c))) 
             |> Seq.where (fun c -> not (Char.IsPunctuation(c)))
             |> Seq.map (fun c -> replaceBlanks c)
@@ -101,6 +108,7 @@ module NgramManager =
     
     open Utilities
     open Dublicates
+    open Models
         /// <summary>
         /// Current working n-gram construction algorithm. Takes text as source and an integer of n-gram size
         /// </summary>
@@ -113,14 +121,49 @@ module NgramManager =
         |> Seq.groupBy id
         |> Seq.map convertSeq //(fun (ngram, occurrences) -> String(ngram), Seq.length occurrences)
 
+    let generateNGram n resource =
+        resource
+        |> stripResource
+        |> Seq.windowed n
+        |> Seq.groupBy id
+        |> Seq.map convertSeq //(fun (ngram, occurrences) -> String(ngram), Seq.length occurrences)
+
+    let GenerateNGram(n, resource) =
+        resource
+        |> stripResource
+        |> Seq.windowed n
+        |> Seq.groupBy id
+        |> Seq.map convertSeq
+
     /// <summary>
     /// Function that takes sequence<'T, 'U> as input and converts it into idictionary obejct.
     /// </summary>
     /// <param name="seq">sequence<'T, 'U></param>
     let toIDict seq =
         seq |> dict
+    /// <summary>
+    /// Function that creates Example model by using specified parameters as input
+    /// </summary>
+    /// <param name="category">Enum value</param>
+    /// <param name="sequence">seq<string, int> value</param>
+    let CreateModel (category, sequence) =
+        let newExample = new Example(Category = category, NGrams = sequence)
+        newExample
 
-    
+    let createModel category sequence =
+        new Example(Category = category, NGrams = sequence)
+
+    let ProcessResource fetch clean createNGram resource = 
+         resource
+         |> fetch
+         |> clean
+         |> createNGram
+
+    let StoreResource convert add resource = 
+        resource
+        |> convert
+        |> add
+        
     /// <summary>
     /// Wrapper for text processing and n-gram creation functions
     /// </summary>

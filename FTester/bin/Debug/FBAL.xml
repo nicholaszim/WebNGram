@@ -8,6 +8,13 @@
  </summary>
  <param name="url"></param>
 </member>
+<member name="M:FBAL.NgramManager.CreateModel(Models.CategoryEnum,System.Collections.Generic.IDictionary{System.String,System.Int32})">
+ <summary>
+ Function that creates Example model by using specified parameters as input
+ </summary>
+ <param name="category">Enum value</param>
+ <param name="sequence">seq<string, int> value</param>
+</member>
 <member name="M:FBAL.NgramManager.toIDict``2(System.Collections.Generic.IEnumerable{System.Tuple{``0,``1}})">
  <summary>
  Function that takes sequence<'T, 'U> as input and converts it into idictionary obejct.
