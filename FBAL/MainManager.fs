@@ -121,6 +121,10 @@ module Generics =
         |> processFn
         |> storeFn
 
+    let FindSimilarityFn compareFn example input = 
+        input
+        |> compareFn example
+
 open Generics
 
 module Working =
@@ -137,7 +141,7 @@ module Working =
     let Store seq = StoreResource convert add seq
 
     /// <summary>
-    /// Function for category creation
+    /// Function for category creation. Needs url as string for processing
     /// </summary>
     let CreateCategory = CreateCategoryFn Process Store
 
