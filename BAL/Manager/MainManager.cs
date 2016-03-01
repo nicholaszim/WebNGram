@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using DAL.Repository;
 using Models;
 using FBAL.Functions;
+using tupleSeq = System.Collections.Generic.IEnumerable<System.Tuple<string, int>>;
 
 namespace BAL.Manager
 {
@@ -41,12 +42,16 @@ namespace BAL.Manager
 			return new Example { Category = category, NGrams = ngrams };
 		}
 
-		public void insertExample(string url, CategoryEnum category)
+		public void buildExample(Func<string, IEnumerable<Ngram>> processor, string url, CategoryEnum category)
 		{
-			var ngrams = FBAL.Functions.Manager.Process(url);
-			var model = Generics.mutateSeq(ngrams);
-			var Example = toExample(category, model.ToList());
+			var ngrams = processor(url);
+			var Example = toExample(category, ngrams.ToList());
 			addExample(Example);
+		}
+
+		public float CompareExamples(Func<tupleSeq, tupleSeq, float> comparator, tupleSeq a, tupleSeq b)
+		{
+			return comparator(a, b);
 		}
 	}
 }

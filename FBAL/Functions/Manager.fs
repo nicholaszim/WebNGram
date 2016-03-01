@@ -31,7 +31,7 @@ module Manager =
     let convertToMap seq = generateMap seq
     ///
     ///
-    let Process input = ProcessResource fetch clean createNgram input
+    let Process input = ProcessResource fetch clean createNgram input |> mutateSeq
     ///
     ///
     let Compare example input = getDistance example input // add category here
