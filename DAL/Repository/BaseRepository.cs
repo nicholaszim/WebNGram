@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAL.Repository;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-	public abstract class BaseRepository<TEntity> where TEntity : class
+	public class BaseRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
 	{
 		internal MainContext context;
 		internal DbSet<TEntity> dbSet;
