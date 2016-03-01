@@ -3,6 +3,7 @@
 open System
 open System.Collections.Generic
 open FBAL.Functions.Utilities
+open Models
 
 module Generics = 
     ///
@@ -20,6 +21,10 @@ module Generics =
         seq
         |> Seq.toArray
         |> Array.map (fun (a, b) -> a, b)
+    ///
+    ///
+    let mutateSeq seq = 
+        seq |> Seq.map (fun (a, b) -> new Ngram(Key = a, Value = b))
     ///
     ///
     let stripResource resource = 

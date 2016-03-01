@@ -2,6 +2,108 @@
 <doc>
 <assembly><name>FBAL</name></assembly>
 <members>
+<member name="M:FBAL.Functions.Generics.getDistance``1(System.Collections.Generic.IEnumerable{System.Tuple{``0,System.Int32}},System.Collections.Generic.IEnumerable{System.Tuple{``0,System.Int32}})">
+
+</member>
+<member name="M:FBAL.Functions.Generics.seqFloatValue``1(System.Collections.Generic.IEnumerable{System.Tuple{``0,System.Int32}})">
+
+</member>
+<member name="M:FBAL.Functions.Generics.desparseMap``3(Microsoft.FSharp.Collections.FSharpMap{``0,``1},Microsoft.FSharp.Collections.FSharpMap{``0,``2})">
+
+</member>
+<member name="M:FBAL.Functions.Generics.getMapVal``2(Microsoft.FSharp.Collections.FSharpMap{``0,``1})">
+
+</member>
+<member name="M:FBAL.Functions.Generics.getSeqVal``2(System.Collections.Generic.IEnumerable{System.Tuple{``0,``1}})">
+
+</member>
+<member name="M:FBAL.Functions.Generics.cosineSim(System.Collections.Generic.IEnumerable{System.Double},System.Collections.Generic.IEnumerable{System.Double})">
+
+</member>
+<member name="M:FBAL.Functions.Generics.CreateCategoryFn``3(Microsoft.FSharp.Core.FSharpFunc{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``1,``2},``0)">
+
+</member>
+<member name="M:FBAL.Functions.Generics.StoreResource``3(Microsoft.FSharp.Core.FSharpFunc{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``1,``2},``0)">
+
+</member>
+<member name="M:FBAL.Functions.Generics.ProcessResource``4(Microsoft.FSharp.Core.FSharpFunc{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``1,``2},Microsoft.FSharp.Core.FSharpFunc{``2,``3},``0)">
+
+</member>
+<member name="M:FBAL.Functions.Generics.generateNGram(System.Int32,System.Collections.Generic.IEnumerable{System.Char})">
+
+</member>
+<member name="M:FBAL.Functions.Generics.stripResource(System.Collections.Generic.IEnumerable{System.Char})">
+
+</member>
+<member name="M:FBAL.Functions.Generics.mutateSeq(System.Collections.Generic.IEnumerable{System.Tuple{System.String,System.Int32}})">
+
+</member>
+<member name="M:FBAL.Functions.Generics.generateArray``2(System.Collections.Generic.IEnumerable{System.Tuple{``0,``1}})">
+
+</member>
+<member name="M:FBAL.Functions.Generics.generateDict``2(System.Collections.Generic.IEnumerable{System.Tuple{``0,``1}})">
+
+</member>
+<member name="M:FBAL.Functions.Generics.seqFromMap``2(Microsoft.FSharp.Collections.FSharpMap{``0,``1})">
+
+</member>
+<member name="M:FBAL.Functions.Generics.generateMap``2(System.Collections.Generic.IEnumerable{System.Tuple{``0,``1}})">
+
+</member>
+<member name="T:FBAL.Functions.Manager.CategoryRecord">
+
+</member>
+<member name="M:FBAL.Functions.Manager.Compare``1(System.Collections.Generic.IEnumerable{System.Tuple{``0,System.Int32}},System.Collections.Generic.IEnumerable{System.Tuple{``0,System.Int32}})">
+
+</member>
+<member name="M:FBAL.Functions.Manager.Process(System.String)">
+
+</member>
+<member name="M:FBAL.Functions.Manager.convertToMap``2(System.Collections.Generic.IEnumerable{System.Tuple{``0,``1}})">
+
+</member>
+<member name="M:FBAL.Functions.Manager.clean``1(``0)">
+
+</member>
+<member name="M:FBAL.Functions.Manager.createNgram(System.Collections.Generic.IEnumerable{System.Char})">
+
+</member>
+<member name="P:FBAL.Functions.Manager.fetch">
+
+</member>
+<member name="M:FBAL.Functions.Manager.callback``1(System.IO.StreamReader,``0)">
+
+</member>
+<member name="M:FBAL.Functions.Utilities.fetchUrl``1(Microsoft.FSharp.Core.FSharpFunc{System.IO.StreamReader,Microsoft.FSharp.Core.FSharpFunc{System.String,``0}},System.String)">
+
+</member>
+<member name="M:FBAL.Functions.Utilities.WindowText``1(System.Int32,System.Collections.Generic.IEnumerable{``0})">
+
+</member>
+<member name="M:FBAL.Functions.Utilities.striptoSeq(System.String,System.String)">
+
+</member>
+<member name="M:FBAL.Functions.Utilities.convertSeq``1(System.Char[],System.Collections.Generic.IEnumerable{``0})">
+
+</member>
+<member name="M:FBAL.Functions.Utilities.stripString(System.String)">
+
+</member>
+<member name="M:FBAL.Functions.Utilities.replaceBlanks(System.Char)">
+
+</member>
+<member name="M:FBAL.Functions.Utilities.stripPunctuation(System.String)">
+
+</member>
+<member name="M:FBAL.Functions.Utilities.stripNumbers(System.String)">
+
+</member>
+<member name="M:FBAL.Functions.Utilities.strip2(System.String,System.String)">
+
+</member>
+<member name="M:FBAL.Functions.Utilities.strip(System.String,System.String)">
+
+</member>
 <member name="M:FBAL.NgramManager.TextProcessor(System.String)">
  <summary>
  Wrapper for text processing and n-gram creation functions

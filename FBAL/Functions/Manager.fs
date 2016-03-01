@@ -35,6 +35,3 @@ module Manager =
     ///
     ///
     let Compare example input = getDistance example input // add category here
-
-    let FindSimilarity (example : Example) input =
-        

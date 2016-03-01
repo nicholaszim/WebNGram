@@ -16,5 +16,6 @@ namespace DAL.Repository
 		void Insert(TEntity entity);
 		void Update(TEntity entityToUpdate);
 		void SetStateModified(TEntity entity);
+		void Delete(TEntity entity);
 	}
 }

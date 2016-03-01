@@ -1,0 +1,16 @@
+D:\My files\C#\Repos\WebNGram\BAL\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+D:\My files\C#\Repos\WebNGram\BAL\bin\Debug\BAL.dll
+D:\My files\C#\Repos\WebNGram\BAL\bin\Debug\BAL.pdb
+D:\My files\C#\Repos\WebNGram\BAL\bin\Debug\DAL.dll
+D:\My files\C#\Repos\WebNGram\BAL\bin\Debug\FBAL.dll
+D:\My files\C#\Repos\WebNGram\BAL\bin\Debug\Models.dll
+D:\My files\C#\Repos\WebNGram\BAL\bin\Debug\EntityFramework.dll
+D:\My files\C#\Repos\WebNGram\BAL\bin\Debug\FSharp.Core.dll
+D:\My files\C#\Repos\WebNGram\BAL\bin\Debug\DAL.pdb
+D:\My files\C#\Repos\WebNGram\BAL\bin\Debug\FBAL.pdb
+D:\My files\C#\Repos\WebNGram\BAL\bin\Debug\FBAL.xml
+D:\My files\C#\Repos\WebNGram\BAL\bin\Debug\Models.pdb
+D:\My files\C#\Repos\WebNGram\BAL\bin\Debug\EntityFramework.xml
+D:\My files\C#\Repos\WebNGram\BAL\bin\Debug\FSharp.Core.xml
+D:\My files\C#\Repos\WebNGram\BAL\obj\Debug\BAL.dll
+D:\My files\C#\Repos\WebNGram\BAL\obj\Debug\BAL.pdb

@@ -50,3 +50,4 @@ D:\My files\C#\Repos\WebNGram\WebNGram\bin\Antlr3.Runtime.pdb
 D:\My files\C#\Repos\WebNGram\WebNGram\bin\Newtonsoft.Json.xml
 D:\My files\C#\Repos\WebNGram\WebNGram\obj\Debug\WebNGram.dll
 D:\My files\C#\Repos\WebNGram\WebNGram\obj\Debug\WebNGram.pdb
+D:\My files\C#\Repos\WebNGram\WebNGram\obj\Debug\WebNGram.csprojResolveAssemblyReference.cache
