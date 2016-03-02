@@ -37,3 +37,9 @@ D:\My files\C#\Repos\WebNGram\WebNGram.Tests\bin\Debug\System.Web.Optimization.x
 D:\My files\C#\Repos\WebNGram\WebNGram.Tests\obj\Debug\WebNGram.Tests.csprojResolveAssemblyReference.cache
 D:\My files\C#\Repos\WebNGram\WebNGram.Tests\obj\Debug\WebNGram.Tests.dll
 D:\My files\C#\Repos\WebNGram\WebNGram.Tests\obj\Debug\WebNGram.Tests.pdb
+D:\My files\C#\Repos\WebNGram\WebNGram.Tests\bin\Debug\DAL.dll
+D:\My files\C#\Repos\WebNGram\WebNGram.Tests\bin\Debug\EntityFramework.dll
+D:\My files\C#\Repos\WebNGram\WebNGram.Tests\bin\Debug\Models.dll
+D:\My files\C#\Repos\WebNGram\WebNGram.Tests\bin\Debug\DAL.pdb
+D:\My files\C#\Repos\WebNGram\WebNGram.Tests\bin\Debug\EntityFramework.xml
+D:\My files\C#\Repos\WebNGram\WebNGram.Tests\bin\Debug\Models.pdb

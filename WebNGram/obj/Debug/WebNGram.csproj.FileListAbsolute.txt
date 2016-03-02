@@ -51,3 +51,16 @@ D:\My files\C#\Repos\WebNGram\WebNGram\bin\Newtonsoft.Json.xml
 D:\My files\C#\Repos\WebNGram\WebNGram\obj\Debug\WebNGram.dll
 D:\My files\C#\Repos\WebNGram\WebNGram\obj\Debug\WebNGram.pdb
 D:\My files\C#\Repos\WebNGram\WebNGram\obj\Debug\WebNGram.csprojResolveAssemblyReference.cache
+D:\My files\C#\Repos\WebNGram\WebNGram\bin\BAL.dll
+D:\My files\C#\Repos\WebNGram\WebNGram\bin\DAL.dll
+D:\My files\C#\Repos\WebNGram\WebNGram\bin\FBAL.dll
+D:\My files\C#\Repos\WebNGram\WebNGram\bin\Models.dll
+D:\My files\C#\Repos\WebNGram\WebNGram\bin\EntityFramework.dll
+D:\My files\C#\Repos\WebNGram\WebNGram\bin\FSharp.Core.dll
+D:\My files\C#\Repos\WebNGram\WebNGram\bin\BAL.pdb
+D:\My files\C#\Repos\WebNGram\WebNGram\bin\DAL.pdb
+D:\My files\C#\Repos\WebNGram\WebNGram\bin\FBAL.pdb
+D:\My files\C#\Repos\WebNGram\WebNGram\bin\FBAL.xml
+D:\My files\C#\Repos\WebNGram\WebNGram\bin\Models.pdb
+D:\My files\C#\Repos\WebNGram\WebNGram\bin\EntityFramework.xml
+D:\My files\C#\Repos\WebNGram\WebNGram\bin\FSharp.Core.xml

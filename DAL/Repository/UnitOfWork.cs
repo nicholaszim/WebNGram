@@ -7,7 +7,7 @@ using Models;
 
 namespace DAL.Repository
 {
-	class UnitOfWork : IUnitOfWork, IDisposable
+	public class UnitOfWork : IUnitOfWork, IDisposable
 	{
 		private MainContext context;
 

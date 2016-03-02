@@ -1,16 +1,13 @@
-﻿using System;
+﻿using DAL.Repository;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DAL.Repository;
-using Models;
-using FBAL.Functions;
 using tupleSeq = System.Collections.Generic.IEnumerable<System.Tuple<string, int>>;
 
 namespace BAL.Manager
 {
-	public class MainManager :BaseManager
+	public class MainManager : BaseManager
 	{
 		public MainManager(IUnitOfWork uOW) : base(uOW)
 		{
@@ -50,6 +47,10 @@ namespace BAL.Manager
 		}
 
 		public float CompareExamples(Func<tupleSeq, tupleSeq, float> comparator, tupleSeq a, tupleSeq b)
+		{
+			return comparator(a, b);
+		}
+		public float GenCompareExample<T>(Func<T, T, float> comparator, T a, T b) where T : class
 		{
 			return comparator(a, b);
 		}
