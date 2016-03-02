@@ -1,4 +1,5 @@
 ﻿using BAL.Intefaces;
+using BAL.Manager;
 using BAL.Repositories;
 using SimpleInjector;
 using SimpleInjector.Integration.Web;
@@ -18,6 +19,7 @@ namespace WebNGram.App_Start
 			var container = new Container();
 			container.Options.DefaultScopedLifestyle = new WebRequestLifestyle();
 			container.Register<IUnitOfWork, UnitOfWork>(Lifestyle.Scoped);
+			container.Register<IMainManager, MainManager>(Lifestyle.Scoped);
 			container.Verify();
 			DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(container));
 		}
