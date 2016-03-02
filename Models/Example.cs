@@ -15,6 +15,12 @@ namespace Models
 		public virtual Example Example { get; set; }
 	}
 
+	public class Category
+	{
+		public int Id { get; set; }
+		public string Name { get; set; }
+	}
+
 	public class Example
 	{
 		public int Id { get; set; }
