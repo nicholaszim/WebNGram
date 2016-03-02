@@ -1,4 +1,5 @@
-﻿using DAL.Repository;
+﻿using BAL.Intefaces;
+using DAL;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -7,7 +8,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL
+namespace BAL.Repositories
 {
 	public class BaseRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
 	{

@@ -14,3 +14,6 @@ D:\My files\C#\Repos\WebNGram\BAL\bin\Debug\EntityFramework.xml
 D:\My files\C#\Repos\WebNGram\BAL\bin\Debug\FSharp.Core.xml
 D:\My files\C#\Repos\WebNGram\BAL\obj\Debug\BAL.dll
 D:\My files\C#\Repos\WebNGram\BAL\obj\Debug\BAL.pdb
+D:\My files\C#\Repos\WebNGram\BAL\bin\Debug\BAL.dll.config
+D:\My files\C#\Repos\WebNGram\BAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\My files\C#\Repos\WebNGram\BAL\bin\Debug\EntityFramework.SqlServer.xml

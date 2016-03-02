@@ -43,3 +43,11 @@ D:\My files\C#\Repos\WebNGram\WebNGram.Tests\bin\Debug\Models.dll
 D:\My files\C#\Repos\WebNGram\WebNGram.Tests\bin\Debug\DAL.pdb
 D:\My files\C#\Repos\WebNGram\WebNGram.Tests\bin\Debug\EntityFramework.xml
 D:\My files\C#\Repos\WebNGram\WebNGram.Tests\bin\Debug\Models.pdb
+D:\My files\C#\Repos\WebNGram\WebNGram.Tests\bin\Debug\SimpleInjector.dll
+D:\My files\C#\Repos\WebNGram\WebNGram.Tests\bin\Debug\SimpleInjector.Integration.Web.dll
+D:\My files\C#\Repos\WebNGram\WebNGram.Tests\bin\Debug\SimpleInjector.Integration.Web.Mvc.dll
+D:\My files\C#\Repos\WebNGram\WebNGram.Tests\bin\Debug\SimpleInjector.xml
+D:\My files\C#\Repos\WebNGram\WebNGram.Tests\bin\Debug\SimpleInjector.Integration.Web.xml
+D:\My files\C#\Repos\WebNGram\WebNGram.Tests\bin\Debug\SimpleInjector.Integration.Web.Mvc.xml
+D:\My files\C#\Repos\WebNGram\WebNGram.Tests\bin\Debug\BAL.dll
+D:\My files\C#\Repos\WebNGram\WebNGram.Tests\bin\Debug\BAL.pdb

@@ -64,3 +64,9 @@ D:\My files\C#\Repos\WebNGram\WebNGram\bin\FBAL.xml
 D:\My files\C#\Repos\WebNGram\WebNGram\bin\Models.pdb
 D:\My files\C#\Repos\WebNGram\WebNGram\bin\EntityFramework.xml
 D:\My files\C#\Repos\WebNGram\WebNGram\bin\FSharp.Core.xml
+D:\My files\C#\Repos\WebNGram\WebNGram\bin\SimpleInjector.dll
+D:\My files\C#\Repos\WebNGram\WebNGram\bin\SimpleInjector.Integration.Web.dll
+D:\My files\C#\Repos\WebNGram\WebNGram\bin\SimpleInjector.Integration.Web.Mvc.dll
+D:\My files\C#\Repos\WebNGram\WebNGram\bin\SimpleInjector.xml
+D:\My files\C#\Repos\WebNGram\WebNGram\bin\SimpleInjector.Integration.Web.xml
+D:\My files\C#\Repos\WebNGram\WebNGram\bin\SimpleInjector.Integration.Web.Mvc.xml

@@ -1,4 +1,4 @@
-﻿using DAL.Repository;
+﻿using BAL.Intefaces;
 using Models;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using tupleSeq = System.Collections.Generic.IEnumerable<System.Tuple<string, int
 
 namespace BAL.Manager
 {
-	public class MainManager : BaseManager
+	public class MainManager : BaseManager, IMainManager
 	{
 		public MainManager(IUnitOfWork uOW) : base(uOW)
 		{

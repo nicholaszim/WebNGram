@@ -1,4 +1,4 @@
-﻿using DAL.Repository;
+﻿using BAL.Intefaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
