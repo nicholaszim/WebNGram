@@ -9,8 +9,10 @@ namespace BAL.Intefaces
 {
 	public interface ICategoryManager
 	{
-		void AddCategory(Example example, Category category);
+		Status AddCategory(Example example, Category category);
 		IEnumerable<Category> getCategories();
 		IEnumerable<string> getNamesOnly();
+		Status CreateCategory(string category);
+		Category getById(int id);
 	}
 }

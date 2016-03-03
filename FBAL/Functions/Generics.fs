@@ -25,6 +25,9 @@ module Generics =
     ///
     let mutateSeq seq = 
         seq |> Seq.map (fun (a, b) -> new Ngram(Key = a, Value = b))
+
+    let mutateSeqBack (seq : seq<Ngram>) = 
+        seq |> Seq.map (fun a -> (a.Key, a.Value))
     ///
     ///
     let stripResource resource = 
@@ -95,4 +98,4 @@ module Generics =
         
         let exampleVal = desparseMap convExample convInput |> getMapVal
         let inputVal = desparseMap convInput convExample |> getMapVal
-        cosineSim exampleVal inputVal
+        double(cosineSim exampleVal inputVal)

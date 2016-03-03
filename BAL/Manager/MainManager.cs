@@ -18,6 +18,10 @@ namespace BAL.Manager
 			uOW.ExampleRepo.Insert(example);
 			uOW.Save();
 		}
+		public Example getById(int id)
+		{
+			return uOW.ExampleRepo.Get(ex => ex.ExampleId == id).FirstOrDefault();
+		}
 
 		public void deleteExampleById(int id)
 		{
@@ -46,11 +50,19 @@ namespace BAL.Manager
 			Example.NGrams.AddRange(ngram);
 			return Example;
 		}
-		public void buildExample(Func<string, IEnumerable<Ngram>> processor, string url, Category category, string name)
+		public Status buildExample(Func<string, IEnumerable<Ngram>> processor, string url, Category category, string name)
 		{
-			var ngrams = processor(url);
-			var Example = toExample(name, category, ngrams.ToList());
-			addExample(Example);
+			try
+			{
+				var ngrams = processor(url);
+				var Example = toExample(name, category, ngrams.ToList());
+				addExample(Example);
+			}
+			catch (Exception)
+			{
+				return Status.Error;
+			}
+			return Status.Success;
 		}
 		//public Example toExample(CategoryEnum category, List<Ngram> ngrams)
 		//{
@@ -64,11 +76,11 @@ namespace BAL.Manager
 		//	addExample(Example);
 		//}
 
-		public float CompareExamples(Func<tupleSeq, tupleSeq, float> comparator, tupleSeq a, tupleSeq b)
+		public double CompareExamples(Func<tupleSeq, tupleSeq, double> comparator, tupleSeq a, tupleSeq b)
 		{
 			return comparator(a, b);
 		}
-		public float GenCompareExample<T>(Func<T, T, float> comparator, T a, T b) where T : class
+		public double GenCompareExample<T>(Func<T, T, double> comparator, T a, T b) where T : class
 		{
 			return comparator(a, b);
 		}
