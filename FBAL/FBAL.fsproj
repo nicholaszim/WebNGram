@@ -33,34 +33,6 @@
     <WarningLevel>3</WarningLevel>
     <DocumentationFile>bin\Release\FBAL.XML</DocumentationFile>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="FSharp.Data.TypeProviders" />
-    <Reference Include="mscorlib" />
-    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Data.Entity" />
-    <Reference Include="System.Numerics" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="AssemblyInfo.fs" />
-    <None Include="Script.fsx" />
-    <Compile Include="NgramManager.fs" />
-    <Compile Include="MainProvider.fs" />
-    <Compile Include="Functions\Utilities.fs" />
-    <Compile Include="Functions\Generics.fs" />
-    <Compile Include="Functions\Manager.fs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Models\Models.csproj">
-      <Name>Models</Name>
-      <Project>{26f6827b-d900-459b-8c9d-ce4d8cc23a52}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
   </PropertyGroup>
@@ -77,6 +49,38 @@
     </Otherwise>
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.fs" />
+    <None Include="Script.fsx" />
+    <Compile Include="NgramManager.fs" />
+    <Compile Include="MainProvider.fs" />
+    <Compile Include="Functions\Utilities.fs" />
+    <Compile Include="Functions\Generics.fs" />
+    <Compile Include="Functions\Parallel.fs" />
+    <Compile Include="Functions\Manager.fs" />
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="FSharp.Collections.ParallelSeq">
+      <HintPath>..\packages\FSharp.Collections.ParallelSeq.1.0.2\lib\net40\FSharp.Collections.ParallelSeq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FSharp.Data.TypeProviders" />
+    <Reference Include="mscorlib" />
+    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Numerics" />
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Name>Models</Name>
+      <Project>{26f6827b-d900-459b-8c9d-ce4d8cc23a52}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -53,7 +53,7 @@ namespace WebNGram.Controllers
 			{
 				var exNgrams = Generics.mutateSeqBack(example.NGrams);
 				var inNgrams = Generics.mutateSeqBack(input.NGrams);
-				var result = mainManager.GenCompareExample<IEnumerable<Tuple<string, int>>>(Generics.getDistance, exNgrams, inNgrams);
+				var result = mainManager.GenCompareExample<IEnumerable<Tuple<string, int>>>(Parallel.getDistanceP, exNgrams, inNgrams);
 				return Json(new { success = true, result }, JsonRequestBehavior.AllowGet);
 			}
 		}
@@ -64,7 +64,7 @@ namespace WebNGram.Controllers
 			if (category == null) return Json(new { success = false, message = "Category exists" }, JsonRequestBehavior.AllowGet);
 			else
 			{
-				var status = mainManager.buildExample(Manager.Process, url, category, name);
+				var status = mainManager.buildExample(Manager.ProcessP, url, category, name);
 				if (status == Status.Error) return Json(new { success = false, message = "Example wasn`t created" }, JsonRequestBehavior.AllowGet);
 				else return Json(new { success = true }, JsonRequestBehavior.AllowGet);
 			}

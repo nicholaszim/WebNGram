@@ -37,6 +37,7 @@ module Utilities =
     ///
     ///
     let convertSeq ((a : char []), b) = (String(a), Seq.length b)
+    let convertSeq2 ((a : char []), b) = (String(a), float(Seq.length b))
     ///
     ///
     let striptoSeq (stripChars : string) (text : string) = 

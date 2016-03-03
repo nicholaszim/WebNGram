@@ -4,6 +4,7 @@ open System.Collections.Generic
 open FBAL.Functions.Utilities
 open FBAL.Functions.Generics
 open Models
+open Parallel
 
 module Manager = 
     ///
@@ -35,3 +36,6 @@ module Manager =
     ///
     ///
     let Compare example input = getDistance example input // add category here
+
+    let createNgramP seq = generateNGramP 5 seq
+    let ProcessP input = ProcessResource fetch clean createNgramP input |> mutateSeq
