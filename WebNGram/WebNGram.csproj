@@ -209,7 +209,11 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\IndexO.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Partials\_PartialCategory.cshtml" />
+    <Content Include="Views\Partials\_PartialExample.cshtml" />
+    <Content Include="Views\Partials\_PartialCompare.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
