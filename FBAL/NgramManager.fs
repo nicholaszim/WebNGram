@@ -146,12 +146,12 @@ module NgramManager =
     /// </summary>
     /// <param name="category">Enum value</param>
     /// <param name="sequence">seq<string, int> value</param>
-    let CreateModel (category, sequence) =
-        let newExample = new Example(Category = category, NGrams = sequence)
-        newExample
-
-    let createModel category sequence =
-        new Example(Category = category, NGrams = sequence)
+//    let CreateModel (category, sequence) =
+//        let newExample = new Example(Category = category, NGrams = sequence)
+//        newExample
+//
+//    let createModel category sequence =
+//        new Example(Category = category, NGrams = sequence)
 
     let ProcessResource fetch clean createNGram resource = 
          resource

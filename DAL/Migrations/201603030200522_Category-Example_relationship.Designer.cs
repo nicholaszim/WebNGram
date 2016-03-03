@@ -7,13 +7,13 @@ namespace DAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class First : IMigrationMetadata
+    public sealed partial class CategoryExample_relationship : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(First));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(CategoryExample_relationship));
         
         string IMigrationMetadata.Id
         {
-            get { return "201602291524426_First"; }
+            get { return "201603030200522_Category-Example_relationship"; }
         }
         
         string IMigrationMetadata.Source

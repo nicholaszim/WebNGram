@@ -22,5 +22,6 @@ namespace DAL
 
 		public DbSet<Ngram> Ngrams { get; set;}
 		public DbSet<Example> Examples { get; set; }
+		public DbSet<Category> Categories { get; set; }
 	}
 }

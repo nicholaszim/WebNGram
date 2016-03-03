@@ -50,9 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainContext.cs" />
-    <Compile Include="Migrations\201602291524426_First.cs" />
-    <Compile Include="Migrations\201602291524426_First.Designer.cs">
-      <DependentUpon>201602291524426_First.cs</DependentUpon>
+    <Compile Include="Migrations\201603030200522_Category-Example_relationship.cs" />
+    <Compile Include="Migrations\201603030200522_Category-Example_relationship.Designer.cs">
+      <DependentUpon>201603030200522_Category-Example_relationship.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,8 +68,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201602291524426_First.resx">
-      <DependentUpon>201602291524426_First.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201603030200522_Category-Example_relationship.resx">
+      <DependentUpon>201603030200522_Category-Example_relationship.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

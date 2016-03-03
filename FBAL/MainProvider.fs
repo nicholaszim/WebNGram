@@ -24,19 +24,19 @@ open Models
 type internal MainConnection = SqlEntityConnection<ConnectionString = @"Data Source=(localdb)\MSSQLLocalDB;Integrated Security=True">
 let internal dataBase = MainConnection.GetDataContext()
 
-let internal retriveCategory category =
-    query {
-        for example in dataBase.Examples do
-        where (example.Category = category)
-        select example
-    }
-
-let internal retrieveBy id category =
-    query {
-        for example in dataBase.Examples do
-        where (example.Category = category && example.Id = id)
-        select example
-    }
+//let internal retriveCategory category =
+//    query {
+//        for example in dataBase.Examples do
+//        where (example.Category = category)
+//        select example
+//    }
+//
+//let internal retrieveBy id category =
+//    query {
+//        for example in dataBase.Examples do
+//        where (example.Category = category && example.Id = id)
+//        select example
+//    }
 
 //let internal table = query {
 //    for r in db.SomeTable do

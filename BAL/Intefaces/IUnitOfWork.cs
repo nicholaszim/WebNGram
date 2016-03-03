@@ -10,6 +10,7 @@ namespace BAL.Intefaces
 	public interface IUnitOfWork
 	{
 		IGenericRepository<Example> ExampleRepo { get; }
+		IGenericRepository<Category> CategoryRepo { get; }
 
 		void Dispose();
 		void Save();

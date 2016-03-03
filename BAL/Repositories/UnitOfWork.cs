@@ -16,6 +16,7 @@ namespace BAL.Repositories
 		private bool disposed = false;
 
 		private IGenericRepository<Example> exampleRepo;
+		private IGenericRepository<Category> categoryRepo;
 
 		public IGenericRepository<Example> ExampleRepo
 		{
@@ -29,10 +30,23 @@ namespace BAL.Repositories
 			}
 		}
 
+		public IGenericRepository<Category> CategoryRepo
+		{
+			get
+			{
+				if (categoryRepo == null)
+				{
+					categoryRepo = new BaseRepository<Category>(context);
+				}
+				return categoryRepo;
+			}
+		}
+
 		public UnitOfWork()
 		{
 			context = new MainContext();
 			exampleRepo = new BaseRepository<Example>(context);
+			categoryRepo = new BaseRepository<Category>(context);
 		}
 
 		public virtual void Dispose(bool disposing)

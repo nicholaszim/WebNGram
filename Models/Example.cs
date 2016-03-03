@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Models
 {
@@ -17,14 +19,17 @@ namespace Models
 
 	public class Category
 	{
-		public int Id { get; set; }
+		public int CategoryId { get; set; }
 		public string Name { get; set; }
+
+		public virtual List<Example> Examples { get; set; }
 	}
 
 	public class Example
 	{
-		public int Id { get; set; }
-		public CategoryEnum Category { get; set; }
+		public int ExampleId { get; set; }
+		public string Name { get; set; }
 		public virtual List<Ngram> NGrams { get; set; }
+		public virtual List<Category> Categories { get; set; }
 	}
 }
