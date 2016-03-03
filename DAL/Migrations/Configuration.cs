@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Models;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity.Migrations;
 using System.Linq;
@@ -12,6 +13,20 @@ namespace DAL.Migrations
 		public Configuration()
 		{
 			AutomaticMigrationsEnabled = false;
+		}
+
+		protected override void Seed(MainContext context)
+		{
+			var categories = new List<Category>
+			{
+				new Category() { Name = "Sport" },
+				new Category() { Name = "Medicine" },
+				new Category() { Name = "Space" },
+				new Category() { Name = "IT" },
+				new Category() { Name = "Movies" }
+			};
+			categories.ForEach(s => context.Categories.AddOrUpdate(p => p.Name, s));
+			context.SaveChanges();
 		}
 	}
 }
